@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search and Submit</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="flex justify-center items-center h-screen">
+        <form action="/submit" method="POST" class="w-full max-w-lg bg-white p-8 rounded shadow-lg">
+            <div class="mb-4">
+                <label for="owner" class="block text-gray-700">Owner:</label>
+                <input type="text" id="owner" name="owner" class="w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+            </div>
+            <div class="mb-4">
+                <label for="device_name" class="block text-gray-700">Device name:</label>
+                <input type="text" id="device_name" name="device_name" class="w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+            </div>
+            <div class="mb-4">
+                <label for="os_version" class="block text-gray-700">OS version:</label>
+                <input type="text" id="os_version" name="os_version" class="w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Device working condition:</label>
+                <label for="condition_yes" class="inline-flex items-center">
+                    <input type="radio" id="condition_yes" name="device_condition" value="Yes" class="form-radio" required>
+                    <span class="ml-2">Yes</span>
+                </label>
+                <label for="condition_no" class="inline-flex items-center ml-6">
+                    <input type="radio" id="condition_no" name="device_condition" value="No" class="form-radio" required>
+                    <span class="ml-2">No</span>
+                </label>
+            </div>
+            <div class="mb-4">
+                <label for="location" class="block text-gray-700">Location:</label>
+                <select id="location" name="location" class="w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" required>
+                    <option value="" disabled selected>Select Location</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Tenali">Tenali</option>
+                    <option value="Banglore">Banglore</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit" class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600">Submit/Search</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
