@@ -14,8 +14,8 @@
 
 3.RUN THE APPLICATION
 
-  -open file manager where app.py is present
-  -open command in that location
+  - open file manager where app.py is present
+  - open command in that location
   - run by using the below comamnd
   - python app.py
   - copy the url and open that url in any browser
