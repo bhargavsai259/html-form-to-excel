@@ -8,7 +8,7 @@
   
 2.INSTALL DEPENDENCIES
 
-  -install flask by using command prompt
+  - install flask by using command prompt
   - pip install flask
 
 
